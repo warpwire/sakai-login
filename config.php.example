@@ -1,0 +1,43 @@
+<?php
+
+$_IS_DEV = false;
+
+// Version of the Sakai Webservices
+$_WW_WEBSERVICES_VERSION = 1.1;
+
+// Signature key for signing requests to Warpwire
+$_WW_USER = '<CONTACT_WARPWIRE_SUPPORT>';
+$_WW_KEY = '<CONTACT_WARPWIRE_SUPPORT>';
+$_WW_URL = '<CONTACT_WARPWIRE_SUPPORT>';
+
+// Method to authenticate against sakai (methods: SOAP,REST)
+$_WW_AUTH_METHOD = 'REST';
+// Allow SSO-style login for REST-based clients
+$_WW_USE_SESSION = true;
+// Consult with Warpwire before changing the below value - this must be consistent
+// across Sakai, Shibboleth, or any other service that will be using Warpwire
+$_WW_UNIQUE_PARAM = 'userId';
+
+// URL FOR Login WebService
+$_LOGIN_URL = '<YOUR SAKAI WEB URL>';
+$_LOGIN_URL_REST = '<YOUR SAKAI WEB URL>/direct/';
+
+// Label to show for all users who will login to the service
+$_SERVICE_NAME = 'Warpwire login for <YOUR ORGANIZATION>';
+$_SERVICE_LOGIN_LABEL = 'User ID';
+
+// CSS Style for the display logo
+$_SERVICE_HEADER_PADDING = 'padding: 15px 0;';
+$_SERVICE_ICON = '<YOUR ORGANIZATION LOGO>';
+$_SERVICE_ICON_DIMENSIONS = 'width: 80px; height: 80px;';
+$_SERVICE_COLOR = 'f4f0e3';
+$_SERVICE_COLOR_ALTERNATE = '555';
+$_SERVICE_COLOR_HOVER = '8c181c';
+
+$_LOCAL_PARTS = array('_WW_USER', '_WW_KEY', '_WW_URL');
+
+// Sakai parameters to access the corresponding web services
+$__WSDL_PARAMS = array(
+        'login' => '/sakai-axis/SakaiLogin.jws?wsdl',
+        'script' => '/sakai-axis/SakaiScript.jws?wsdl'
+);
