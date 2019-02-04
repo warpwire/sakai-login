@@ -1,6 +1,6 @@
-# sakai-login
+# Warpwire's Sakai Login Script
 
-### First, gather the following necessary Information:
+## First, gather the following necessary Information: ##
 1. Web services: https://{SAKAI_URL}/direct/ 
      
      URL for web services. Again, the above URL format is standard in Sakai. Note that it may vary if your institution has customized it.
@@ -22,16 +22,17 @@
      63.251.106.126
      
 
-### There are two options for implementation. We have clients utilizing each of these options.
+## Options ##
 
+There are two options for implementation. We have clients utilizing each of these options.
 
-1. Let us take care of it. Provide the above information and we will host the script and login page allowing Sakai authentication outside of Sakai
+1. __Let us take care of it__. Provide the above information and we will host the script and login page allowing Sakai authentication outside of Sakai
 
      If you choose this option, Warpwire will handle the implementation
     
      If you choose this option, some user login data will pass through Warpwire servers
     
-2. Download the script from GitHub and host it yourself. 
+2. __Download the script from GitHub and host it yourself__. 
 
      If you choose this option, contact Warpwire to receive a key and secret
     
